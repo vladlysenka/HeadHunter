@@ -7,18 +7,6 @@ struct SignIn: View {
     @State private var isEmailValid: Bool = true
     @State private var showError: Bool = false
     @State private var isShowOTP: Bool = false
-
-    func validateEmail() {
-        // Паттерн для проверки email
-        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
-
-        // Создание объекта NSPredicate с использованием emailRegex
-        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
-
-        // Применение NSPredicate к переданному email и возврат результата
-        isEmailValid = emailPredicate.evaluate(with: emailOrPhone)
-    }
-
     var body: some View {
         VStack(spacing: 16) {
             VStack(alignment: .leading, spacing: 16) {
@@ -79,7 +67,7 @@ struct SignIn: View {
                     .disabled(emailOrPhone.isEmpty)
 
                     Button("Войти с паролем") {
-
+                        isShowOTP.toggle()
                     }
                     .font(.system(size: size14px))
                 }
@@ -120,6 +108,18 @@ struct SignIn: View {
             OTPView(emailOrPhone: $emailOrPhone)
         }
     }
+    
+    func validateEmail() {
+        // Паттерн для проверки email
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
+
+        // Создание объекта NSPredicate с использованием emailRegex
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+
+        // Применение NSPredicate к переданному email и возврат результата
+        isEmailValid = emailPredicate.evaluate(with: emailOrPhone)
+    }
+    
 }
 
 #Preview {

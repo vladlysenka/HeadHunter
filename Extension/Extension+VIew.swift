@@ -3,6 +3,10 @@
 import SwiftUI
 
 extension View {
+    func disableWithOpacity(_ condition: Bool) -> some View {
+        self.disabled(condition)
+            .opacity(condition ? 0.6 : 1)
+    }
     
     // MARK: Tab Bar
     @ViewBuilder func tabLabel(_ tab: Tab) -> some View {

@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F55274E02BADB4C900E06731 /* Extension+Binding.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55274DF2BADB4C900E06731 /* Extension+Binding.swift */; };
+		F55274E22BADB53800E06731 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55274E12BADB53800E06731 /* Main.swift */; };
+		F55274E42BADBF0D00E06731 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = F55274E32BADBF0D00E06731 /* Item.swift */; };
+		F5BA02BC2BADC7180067984C /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA02BB2BADC7180067984C /* HTTPClient.swift */; };
+		F5BA02BE2BADE2840067984C /* Extension+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA02BD2BADE2840067984C /* Extension+String.swift */; };
 		F5E3644B2BA9B68D00081F00 /* HeadHunterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E3644A2BA9B68D00081F00 /* HeadHunterApp.swift */; };
 		F5E3644F2BA9B68E00081F00 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E3644E2BA9B68E00081F00 /* Assets.xcassets */; };
 		F5E364522BA9B68E00081F00 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5E364512BA9B68E00081F00 /* Preview Assets.xcassets */; };
@@ -17,12 +22,17 @@
 		F5E364652BA9BC1000081F00 /* Responses.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E364642BA9BC1000081F00 /* Responses.swift */; };
 		F5E364672BA9BC1C00081F00 /* Messages.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E364662BA9BC1C00081F00 /* Messages.swift */; };
 		F5E3646A2BA9BC2B00081F00 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E364692BA9BC2B00081F00 /* Profile.swift */; };
-		F5E3646D2BA9BC7700081F00 /* VIew+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E3646C2BA9BC7700081F00 /* VIew+Extension.swift */; };
+		F5E3646D2BA9BC7700081F00 /* Extension+VIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E3646C2BA9BC7700081F00 /* Extension+VIew.swift */; };
 		F5E3646F2BA9BF7200081F00 /* SignIn.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E3646E2BA9BF7200081F00 /* SignIn.swift */; };
 		F5E364712BA9DFC800081F00 /* OTPView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5E364702BA9DFC800081F00 /* OTPView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		F55274DF2BADB4C900E06731 /* Extension+Binding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+Binding.swift"; sourceTree = "<group>"; };
+		F55274E12BADB53800E06731 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
+		F55274E32BADBF0D00E06731 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		F5BA02BB2BADC7180067984C /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		F5BA02BD2BADE2840067984C /* Extension+String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+String.swift"; sourceTree = "<group>"; };
 		F5E364472BA9B68D00081F00 /* HeadHunter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HeadHunter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5E3644A2BA9B68D00081F00 /* HeadHunterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeadHunterApp.swift; sourceTree = "<group>"; };
 		F5E3644E2BA9B68E00081F00 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -34,7 +44,7 @@
 		F5E364642BA9BC1000081F00 /* Responses.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Responses.swift; sourceTree = "<group>"; };
 		F5E364662BA9BC1C00081F00 /* Messages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Messages.swift; sourceTree = "<group>"; };
 		F5E364692BA9BC2B00081F00 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
-		F5E3646C2BA9BC7700081F00 /* VIew+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "VIew+Extension.swift"; sourceTree = "<group>"; };
+		F5E3646C2BA9BC7700081F00 /* Extension+VIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+VIew.swift"; sourceTree = "<group>"; };
 		F5E3646E2BA9BF7200081F00 /* SignIn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignIn.swift; sourceTree = "<group>"; };
 		F5E364702BA9DFC800081F00 /* OTPView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OTPView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -50,11 +60,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F55274E52BADBFC600E06731 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				F5BA02BB2BADC7180067984C /* HTTPClient.swift */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
 		F5E3643E2BA9B68D00081F00 = {
 			isa = PBXGroup;
 			children = (
 				F5E3645B2BA9B6F500081F00 /* App */,
 				F5E3645A2BA9B6EE00081F00 /* Assets */,
+				F55274E52BADBFC600E06731 /* Clients */,
 				F5E364592BA9B6EA00081F00 /* View */,
 				F5E364582BA9B6E600081F00 /* Model */,
 				F5E3646B2BA9BC5600081F00 /* Extension */,
@@ -74,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				F5E3645C2BA9B7CA00081F00 /* Tab.swift */,
+				F55274E32BADBF0D00E06731 /* Item.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -89,6 +109,7 @@
 				F5E364692BA9BC2B00081F00 /* Profile.swift */,
 				F5E3646E2BA9BF7200081F00 /* SignIn.swift */,
 				F5E364702BA9DFC800081F00 /* OTPView.swift */,
+				F55274E12BADB53800E06731 /* Main.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,7 +134,9 @@
 		F5E3646B2BA9BC5600081F00 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
-				F5E3646C2BA9BC7700081F00 /* VIew+Extension.swift */,
+				F5E3646C2BA9BC7700081F00 /* Extension+VIew.swift */,
+				F55274DF2BADB4C900E06731 /* Extension+Binding.swift */,
+				F5BA02BD2BADE2840067984C /* Extension+String.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -189,15 +212,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5E364712BA9DFC800081F00 /* OTPView.swift in Sources */,
+				F55274E02BADB4C900E06731 /* Extension+Binding.swift in Sources */,
 				F5E364652BA9BC1000081F00 /* Responses.swift in Sources */,
-				F5E3646D2BA9BC7700081F00 /* VIew+Extension.swift in Sources */,
+				F5E3646D2BA9BC7700081F00 /* Extension+VIew.swift in Sources */,
+				F55274E22BADB53800E06731 /* Main.swift in Sources */,
 				F5E3646A2BA9BC2B00081F00 /* Profile.swift in Sources */,
 				F5E3645F2BA9BBA300081F00 /* TabBar.swift in Sources */,
 				F5E364612BA9BBF900081F00 /* Search.swift in Sources */,
 				F5E364672BA9BC1C00081F00 /* Messages.swift in Sources */,
+				F5BA02BE2BADE2840067984C /* Extension+String.swift in Sources */,
 				F5E3644B2BA9B68D00081F00 /* HeadHunterApp.swift in Sources */,
 				F5E3646F2BA9BF7200081F00 /* SignIn.swift in Sources */,
+				F5BA02BC2BADC7180067984C /* HTTPClient.swift in Sources */,
 				F5E364632BA9BC0600081F00 /* Favorites.swift in Sources */,
+				F55274E42BADBF0D00E06731 /* Item.swift in Sources */,
 				F5E3645D2BA9B7CA00081F00 /* Tab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -340,6 +368,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -373,6 +402,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -8,7 +8,8 @@ struct OTPView: View {
     @Binding var emailOrPhone: String
     @State private var otpText: String = ""
     @State private var isCodeValid = false
-    
+    /// - Keyboard State
+    @FocusState private var isKeyboardShowing: Bool
     var body: some View {
         VStack(spacing: 16) {
             Text("Отправили код на \(emailOrPhone)")
@@ -23,6 +24,19 @@ struct OTPView: View {
                     OTPBox(index)
                 }
             }
+            .background {
+                TextField("", text: $otpText.limit(4))
+                    .keyboardType(.numberPad)
+                    .textContentType(.oneTimeCode)
+                    .frame(width: 1, height: 1)
+                    .opacity(0.001)
+                    .blendMode(.screen)
+                    .focused($isKeyboardShowing)
+            }
+            .contentShape(Rectangle())
+            .onTapGesture {
+                isKeyboardShowing.toggle()
+            }
             
             Button("Подтвердить") {
                 
@@ -31,6 +45,7 @@ struct OTPView: View {
             .foregroundStyle(.white)
             .frame(maxWidth: .infinity, minHeight: 48)
             .background(.blue, in: .rect(cornerRadius: 8))
+            .disableWithOpacity(otpText.count < 4)
         }
         .padding(.horizontal, 14)
         
@@ -39,7 +54,11 @@ struct OTPView: View {
     @ViewBuilder func OTPBox(_ index: Int) -> some View {
         ZStack{
             if otpText.count > index {
-                
+                /// - Finding Char At Index
+                let startIndex = otpText.startIndex
+                let charIndex = otpText.index(startIndex, offsetBy: index)
+                let charToString = String(otpText[charIndex])
+                Text(charToString)
             } else {
                 Text ("")
             }
@@ -51,5 +70,10 @@ struct OTPView: View {
 }
 
 #Preview {
-    OTPView(emailOrPhone: .constant("123.com"))
+    @State var emailOrPhone: String = ""
+    return OTPView(emailOrPhone: $emailOrPhone)
 }
+
+
+
+
