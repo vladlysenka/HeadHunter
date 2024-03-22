@@ -1,5 +1,5 @@
-# HeadHunter test assignment
+# HeadHunter
 
-### Effective Mobile
+### Test assignment
 
-> Тестовое задание для компании Effective Mobile
+> Для Effective Mobile
